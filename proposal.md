@@ -19,8 +19,8 @@
 > - [Dyno](https://dyno.gg) is an app that can run automated tasks, though it is limited in customisation.
 
 # Listing of Key Use Cases
-> Every session, attendance can be taken quickly
-> 
+> - Every session, attendance needs to be taken
+> - Members may need to look at past resources
 
 # Skills that my project requires me to pick up
 > List out the skills that you are not familiar with that is necessary due to the project scope.
