@@ -10,11 +10,11 @@
 > The development log will be graded for completion, detail, and honesty – not progress. It is much better to truthfully evaluate the work you completed in a week then lie to make the project sound further along then it really is. It is totally acceptable to have an entry that says you tried nothing and accomplished nothing. However if every week starts to say that, both yourself and your project mentor will be able to identify the issue before it becomes impossible to fix.
 
 ## Week 5 (26 Jul - 1 Aug)
-- Finish my proposal
+- Finish my proposal (ended up taking up the next week as well)
 ## Week 6 (2 Aug - 8 Aug)
-
+  - Start working on my project (done)
 ## Week 7 (9 Aug - 15 Aug)
-
+- Try to figure out how google api works
 ## Week 8 (16 Aug - 22 Aug)
 
 ## Week 9 (23 Aug - 29 Aug)
