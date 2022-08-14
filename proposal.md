@@ -23,7 +23,7 @@
 > - Members may need to look at past resources
 
 # Skills that my project requires me to pick up
-> List out the skills that you are not familiar with that is necessary due to the project scope.
+> A new programming language (node.js) and using the Google Apps Script API
 
 # [Development Log](/devlog.md)
 > You will be updating this section regularly
