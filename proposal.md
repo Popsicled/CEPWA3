@@ -32,6 +32,10 @@
 > - Week 6
 >   - Finish proposal and start working on project
 > - Week 7
+>   - Learn how to read from json and managed to allow members to view their own info using the object.
+>   - tried to implement oop on a CCA member, still a bit scuffed 
+>   - tried to setup the google drive api to no avail
 > - Week 8
+>   - nothing, too busy doing physics portfolio :(
 > - Week 9
 > - Week 10
