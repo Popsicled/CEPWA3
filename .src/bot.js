@@ -1,15 +1,16 @@
 const fs = require('node:fs');
 const path = require('node:path');
-const { Client, Collection, Intents } = require('discord.js');
-const { parse }  = require("csv-parse");
-var token = '';
+const { Client, Collection, GatewayIntentBits } = require('discord.js');
+
+
+let token = '';
 if (fs.existsSync('./config.json')) {
     const { botToken } = require('./config.json');
 	token = botToken;
 } else {
 	token = process.env.token;
 }
-const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
+const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildMembers, GatewayIntentBits.GuildEmojisAndStickers]});
 
 
 client.commands = new Collection();
@@ -19,7 +20,6 @@ const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('
 
 const eventsPath = path.join(__dirname, 'events');
 const eventFiles = fs.readdirSync(eventsPath).filter(file => file.endsWith('.js'));
-
 
 for (const file of commandFiles) {
 	const filePath = path.join(commandsPath, file);
@@ -38,20 +38,23 @@ for (const file of eventFiles) {
 	}
 }
 
-
 client.on('interactionCreate', async interaction => {
-	if (!interaction.isCommand()) return; // command is not a command? idk
+		if (interaction.isButton()) {
+			
+		} else if (interaction.isChatInputCommand()) {
+		const command = client.commands.get(interaction.commandName);
 
-	const command = client.commands.get(interaction.commandName);
+		if (!command) return; // command file does not exist
 
-	if (!command) return; // command file does not exist
-
-	try {
-    	await command.execute(interaction);
-	} catch (error) {
-		console.error(error);
-		await interaction.reply({ content: 'There was an error while executing this command. If this happens multiple times, please contact the dev', ephemeral: true });
+		try {
+			await command.execute(interaction);
+		} catch (error) {
+			console.error(error);
+			await interaction.reply({ content: 'There was an error while executing this command. If this happens multiple times, please contact the dev', ephemeral: true });
+		}
 	}
+
+
 });
 
 

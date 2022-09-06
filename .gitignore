@@ -1,5 +1,7 @@
-src/node_modules
-src/info.csv
-src/info.json
-src/token.json
-src/config.json
+.src/node_modules
+.src/info.csv
+.src/info.json
+.src/token.json
+.src/config.json
+.src/info_members.json
+.src/updatedinfo.json

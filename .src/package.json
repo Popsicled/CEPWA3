@@ -7,16 +7,15 @@
   "author": "apoapzis",
   "license": "ISC",
   "engines": {
-    "node": "16.15.1",
-    "npm": "8.12.1"
+    "node": "16.17.0",
+    "npm": "8.18.0"
   },
   "dependencies": {
-    "@discordjs/builders": "^0.15.0",
     "@discordjs/rest": "^0.5.0",
     "csv-parse": "^5.3.0",
     "csv-writer": "^1.6.0",
     "discord-api-types": "^0.33.5",
-    "discord.js": "^13.8.0",
-    "googleapis": "^104.0.0"
+    "discord.js": "^14.3.0",
+    "lodash": "^4.17.21"
   }
 }
