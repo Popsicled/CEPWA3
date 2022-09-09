@@ -7,7 +7,7 @@
 
 # Listing of features
 > MVP
-> - Collect members' information and link to their Discord accounts
+> - Collect members' information and link to their Discord accounts, allow EXCO to edit member information
 > - Categorise members according to their role in the CCA (current member, alumni, EXCO) and allow different commands to be run from that.
 > - Update pizza points (gained from helping the club, rewarded with pizza slices)
 > 
@@ -21,6 +21,7 @@
 # Listing of Key Use Cases
 > - Members may need to look at past resources
 > - EXCO needs to know who to receive extra pizza slices (if any)
+> - EXCO will need to edit member information if it has been entered wrongly
 
 # Skills that my project requires me to pick up
 > - A new programming language (node.js)

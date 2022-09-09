@@ -30,3 +30,6 @@
 - Write the member information to a file so all changes are saved
 - Hopefully I can get the resources system working next week, should be much easier since the updating system is more straightforward (I don't really have a choice since its the last week)
 ## Sep Holiday (5 Sep - 10 Sep) **Submission date is 10 Sep**
+- DONE
+- Got the resources system working, I think this was more useful than what I did in the past 6 weeks combined
+- See the video for more :D
